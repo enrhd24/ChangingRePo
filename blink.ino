@@ -1,34 +1,48 @@
 #define LED_PIN_1 8
 #define LED_PIN_2 9
 #define LED_PIN_3 10
+#define BUTTON_1 7
+#define BUTTON_2 6
 
 void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_PIN_1, OUTPUT);
   pinMode(LED_PIN_2, OUTPUT);
   pinMode(LED_PIN_3, OUTPUT);
   digitalWrite(LED_PIN_1, HIGH);
   digitalWrite(LED_PIN_2, HIGH);
   digitalWrite(LED_PIN_3, HIGH);
+
+  pinMode(BUTTON_1, INPUT);
+  pinMode(BUTTON_2, INPUT);
+
+  Serial.begin(9600);
 }
 
-// the loop function runs over and over again forever
 void loop() {
-  delay(500);
-  digitalWrite(LED_PIN_1, LOW);  // turn the LED on (HIGH is the voltage level)
-  delay(500);                      // wait for a second
-  digitalWrite(LED_PIN_1, HIGH);   // turn the LED off by making the voltage LOW
-  delay(500);                      // wait for a second
+  int button1 = digitalRead(BUTTON_1);
+  int button2 = digitalRead(BUTTON_2);
+  Serial.println(button1);
+  //Serial.println(button2);
 
-   digitalWrite(LED_PIN_2, LOW);  // turn the LED on (HIGH is the voltage level)
-  delay(500);                      // wait for a second
-  digitalWrite(LED_PIN_2, HIGH);   // turn the LED off by making the voltage LOW
+  if(button1 == 1){
+  digitalWrite(LED_PIN_1, LOW);
+  digitalWrite(LED_PIN_2, LOW);
+  digitalWrite(LED_PIN_3, LOW);
+  }else if(button1 == 0){
+    digitalWrite(LED_PIN_1, HIGH);
+  digitalWrite(LED_PIN_2, HIGH);
+  digitalWrite(LED_PIN_3, HIGH);
+  }
+
+  if(button2 == 1){
+  delay(500)  ;             
+  digitalWrite(LED_PIN_1, LOW);   
+  delay(500);                
+  digitalWrite(LED_PIN_2, LOW);  
+  delay(500);                   
+  digitalWrite(LED_PIN_3, LOW);   
   delay(500); 
 
-      digitalWrite(LED_PIN_3, LOW);  // turn the LED on (HIGH is the voltage level)
-  delay(500);                      // wait for a second
-  digitalWrite(LED_PIN_3, HIGH);   // turn the LED off by making the voltage LOW
-  delay(500); 
-
+  }
  
 }
