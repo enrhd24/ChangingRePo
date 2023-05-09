@@ -1,8 +1,8 @@
 ### ChangingRePo
 - My place is Pair Programming<br>
-[1][Day1](https://github.com/enrhd24/ChangingRePo/tree/enrhd24/DAY1)
+[1][Day1](https://github.com/enrhd24/ChangingRePo/tree/enrhd24/DAY1)<br>
+[1][Dart](https://github.com/enrhd24/ChangingRePo/tree/enrhd24/Dart)
 
-#### branch practice
-- I can do it<br>
-- This is my favorite place<br>
-- This is my branch named firsgt<br>
+### How to installer flutter 
+[1] [Window](https://chocolatey.org/install#individual)
+[2] [MacOs](https://formulae.brew.sh/cask/flutter) 
