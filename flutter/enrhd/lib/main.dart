@@ -16,15 +16,39 @@ class App extends StatelessWidget{
   Widget build(BuildContext context){
     return MaterialApp(
       home : Scaffold(
-        backgroundColor: Colors.black,
-        body : Column(
-          children : [
-            Column(children: [
-              Text('Hey, Selena'),
-              Text('Welcome back'),
-            ],)
+        backgroundColor: Color(0xFF181818),    
+        body : Padding(
+          padding : EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+          children: [
+                SizedBox(
+                  height : 80,
+                ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Column(
+                  crossAxisAlignment:
+                  CrossAxisAlignment.end,
+                  children : [
+                  Text("Hey, Selena",
+                  style : TextStyle(
+                    color : Colors.white,
+                    fontSize:28,
+                    fontWeight: FontWeight.w600,)
+                    ),
+                  Text("Welcame back",
+                  style : TextStyle(
+                    color : Colors.white.
+                    withOpacity(0.5), 
+                    fontSize: 10,)
+                    ),
+                  ]
+                )
+              ],
+            )
           ],
-        ),
+        ) )
       ),
     );
   }
