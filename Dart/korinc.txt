@@ -1,0 +1,41 @@
+kotlin
+-> 컴파일 시간 단축
+-> 파이썬코드 웹으로 볼 수 있음
+
+keynote
+Compose로 andriod MutilPlatform 만들기
+: https://bit/ly/3mPcpLu [이젠 컨퍼런스]
+
+Compose란?
+-> Jetpack Compose
+-> UI도구 키트
+-> 한국많이 쓰고, 안정화 단계 2024
+
+: 비동기와 동시성의 대한 이슈가 존재함
+:  Kotlin/ Compose Multiplatform
+: UI, Presentation, domain.Business, 몰라
+: single platform, Multiplatform
+
+common -> 모듈
+안드로이드
+데스크탑
+
+: export -> [Expect - Actual]
+
+
+Material Theme -> Light/Dart Theme
+API  ,  database  ,  etc..
+
+platform version 분기 -> expect  ,  actual
+
+
+
+
+
+
+
+
+
+
+
+
