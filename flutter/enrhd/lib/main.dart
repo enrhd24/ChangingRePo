@@ -59,7 +59,7 @@ class App extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 42,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white,l
+                        color: Colors.white,
                       )),
                   SizedBox(
                     height: 25,
